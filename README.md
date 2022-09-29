@@ -66,16 +66,17 @@ This task i an excersice in accessing fields in objects within objects. You will
 
 2.d Create a Building.java class with the following fields (use appropriate types):
 - Rooms (make sure to use the \'final\' keyword here as this variable should never change once it has been assigned a value)
-   <details>Hint
+   <details>
         <summary>
-            This should be a datatype that can hold multiple objects of type Room.
+          Hint  
         </summary>
+        This should be a datatype that can hold multiple objects of type Room.
     </details>
 
-   <details>never heard about  \'final\'?
-        <summary>
-            <a href="https://www.geeksforgeeks.org/final-keyword-in-java/">read about the final keyword</a>
+   <details>
+        <summary>never heard about  \'final\'?
         </summary>
+         <a href="https://www.geeksforgeeks.org/final-keyword-in-java/">read about the final keyword</a>
     </details>
 - numberOfBathrooms
 - numberOfFloors
@@ -92,10 +93,11 @@ This task i an excersice in accessing fields in objects within objects. You will
 2.i In your main method, instantiate a new building.
 
 2.j create a static method in Main, countLampsInBuilding, that takes an object of type Building, and returns the total number of lamps in the entire building.
- <details>Hint
+ <details>
         <summary>
-            You will need to have a loop in the body of the method that looks at each room in the building to add the number of laps in each room.
+           Hint
         </summary>
+         You will need to have a loop in the body of the method that looks at each room in the building to add the number of laps in each room.
     </details>
 
 2.k create another static method in Main, isNormal, that takes an object of type Building. The method should return true if the Building's numberOfFloors is greater than its number of Rooms. If not it should print "This is an odd building" and return false.
