@@ -1,4 +1,4 @@
-# Exercises in  OOP Aggregation and Composition
+### Exercises in  OOP Aggregation and Composition
 
 Today's exercises should be performed in IntelliJ. 
 You are to create a new project titled "AggregationAndComposition". 
@@ -7,7 +7,9 @@ In each package, create a Main.java with a static Main method which will be used
 
 Please note, that it is quite unusual to have a Main class in each package, yet this is done so for the sake of the exercise.
 
-## Task 1: Aggregation
+## Task 1: Cars and drivers
+This task is excersice in the syntax of writing entity classes, and how to connect those by assigning instances of one class to instance fields of another.
+
 1.a Create a Driver.java class with the following private fields (use appropriate types): 
 - Name
 - Age
@@ -15,18 +17,24 @@ Please note, that it is quite unusual to have a Main class in each package, yet 
 1.b Create a constructor that populates all the fields above. 
 
 1.c Create a Car.java class with the following private fields (use appropriate types):
-- Make
-- Model
-- Year
-- BodyStyle
-- Driver
+- make
+- model
+- year
+- bodyStyle
+- driver
 
 1.d Create a constructor, that populates all the fields above, except the Driver. 
 
-1.e Create a Getter and a Setter for the Driver variable.
+1.e A car is not instantiated with a Driver, so we need another way to assign and un-assign a driver to a car: create getter and a getter methods for the Driver variable, of the Car class.
 
 1.f override the toString method in the Car class, returning:
      "Make: "+make+". Model: "+model+ " ("+ year + "), BodyStyle: "+bodyStyle
+
+   <details>Help:
+        <summary>
+            <a href="https://www.geeksforgeeks.org/overriding-tostring-method-in-java/">read about overriding the toString method</a>>
+        </summary>
+    </details>  
      
 1.g override the toString method in the Driver class, returning: 
     " is driven by "+name
@@ -45,7 +53,7 @@ Please note, that it is quite unusual to have a Main class in each package, yet 
 
 
 ## Task 2: Composition
-2.a Create a Room.java class with the following fields (use appropriate types): 
+2.a Create a Room.java class with the following fields (use appropriate types and make them private): 
 - Walls.java
 - numberOfDoors
 - numberOfLamps
@@ -53,17 +61,28 @@ Please note, that it is quite unusual to have a Main class in each package, yet 
 
 2.b Create a constructor that populates all the fields above.
 
-2.c Create getters() for each of the fields above. 
+2.c As the fields of the Room class are private, create getters() for each of them, 
 
 2.d Create a Building.java class with the following fields (use appropriate types):
-- Rooms (make sure to use the \'final\' keyword here .(Tess: - if you have ever heard about it. The code should work either way ;).
+- Rooms (make sure to use the \'final\' keyword here as this variable should never change once it has been assigned a value)
+   <details>Hint
+        <summary>
+            This should be a datatype that can hold multiple objects of type Room.
+        </summary>
+    </details>
+
+   <details>never heard about  \'final\'?
+        <summary>
+            <a href="https://www.geeksforgeeks.org/final-keyword-in-java/">read about the final keyword</a>>
+        </summary>
+    </details>
 - numberOfBathrooms
 - numberOfFloors
 - isOfficeBuilding
 
 2.e Create a constructor that populates all the fields above. 
 
-2.f Create getters() for each of the fields above. 
+2.f As the fields of the Building class are private, create getters() for each of them.
     
 2.g In your main method, instantiate at least three different rooms. 
 
@@ -71,12 +90,17 @@ Please note, that it is quite unusual to have a Main class in each package, yet 
 
 2.i In your main method, instantiate a new building.
 
-2.j print the total number of lamps in the entire building.
+2.j create a static method in Main, countLampsInBuilding, that takes an object of type Building, and returns the total number of lamps in the entire building.
+ <details>Hint
+        <summary>
+            You will need to have a loop in the body of the method that looks at each room in the building to add the number of laps in each room.
+        </summary>
+    </details>
 
-2.k make an if statement that checks if numberOfFloors > number of Rooms. if true, then print "This is an odd building". 
+2.k create another static method in Main, isNormal, that takes an object of type Building. The method should return true if the Building's numberOfFloors is greater than its number of Rooms. If not it should print "This is an odd building" and return false.
 
 
-##Task 3: (language switch alert) ArrayList og Objekter
+## Task 3: (language switch alert) ArrayList og Objekter
 
 3.a Lav en klasse, Customer, med attributterne:
 String firstName
