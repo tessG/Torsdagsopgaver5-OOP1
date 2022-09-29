@@ -30,10 +30,11 @@ This task is excersice in the syntax of writing entity classes, and how to conne
 1.f override the toString method in the Car class, returning:
      "Make: "+make+". Model: "+model+ " ("+ year + "), BodyStyle: "+bodyStyle
 
-   <details>Help:
+   <details>
         <summary>
-            <a href="https://www.geeksforgeeks.org/overriding-tostring-method-in-java/">read about overriding the toString method</a>
+           Help:
         </summary>
+         <a href="https://www.geeksforgeeks.org/overriding-tostring-method-in-java/">read about overriding the toString method</a>
     </details>  
      
 1.g override the toString method in the Driver class, returning: 
@@ -74,7 +75,7 @@ This task i an excersice in accessing fields in objects within objects. You will
     </details>
 
    <details>
-        <summary>never heard about  \'final\'?
+        <summary>never heard about  <code>final</code>?
         </summary>
          <a href="https://www.geeksforgeeks.org/final-keyword-in-java/">read about the final keyword</a>
     </details>
