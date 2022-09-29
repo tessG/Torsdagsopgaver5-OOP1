@@ -7,7 +7,7 @@ In each package, create a Main.java with a static Main method which will be used
 
 Please note, that it is quite unusual to have a Main class in each package, yet this is done so for the sake of the exercise.
 
-## Task 1: Cars and drivers
+## Task 1: Aggregation: Cars and drivers
 This task is excersice in the syntax of writing entity classes, and how to connect those by assigning instances of one class to instance fields of another.
 
 1.a Create a Driver.java class with the following private fields (use appropriate types): 
@@ -32,7 +32,7 @@ This task is excersice in the syntax of writing entity classes, and how to conne
 
    <details>Help:
         <summary>
-            <a href="https://www.geeksforgeeks.org/overriding-tostring-method-in-java/">read about overriding the toString method</a>>
+            <a href="https://www.geeksforgeeks.org/overriding-tostring-method-in-java/">read about overriding the toString method</a>
         </summary>
     </details>  
      
@@ -52,9 +52,10 @@ This task is excersice in the syntax of writing entity classes, and how to conne
 1.m repeat the step 1.k for the new car created in 1.l. 
 
 
-## Task 2: Composition
+## Task 2: Composition: Buildings and Rooms
+This task i an excersice in accessing fields in objects within objects. You will create a building with some rooms. Each room will have some attributes which you will access(read the value of) in order to draw conclusions about the building in which the room is placed.
+
 2.a Create a Room.java class with the following fields (use appropriate types and make them private): 
-- Walls.java
 - numberOfDoors
 - numberOfLamps
 - numberOfWindows
