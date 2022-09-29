@@ -74,7 +74,7 @@ This task i an excersice in accessing fields in objects within objects. You will
 
    <details>never heard about  \'final\'?
         <summary>
-            <a href="https://www.geeksforgeeks.org/final-keyword-in-java/">read about the final keyword</a>>
+            <a href="https://www.geeksforgeeks.org/final-keyword-in-java/">read about the final keyword</a>
         </summary>
     </details>
 - numberOfBathrooms
