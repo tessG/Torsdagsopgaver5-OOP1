@@ -1,13 +1,13 @@
-### Exercises in  OOP Aggregation and Composition
+### Exercises in  OOP 
 
 Today's exercises should be performed in IntelliJ. 
-You are to create a new project titled "AggregationAndComposition". 
+You are to create a new project titled "OOP1". 
 For each task below, you must create a new package in the project's src directory. Name it accordingly to the task, e.g. "Task1". 
 In each package, create a Main.java with a static Main method which will be used to call the methods required to complete the tasks. 
 
 Please note, that it is quite unusual to have a Main class in each package, yet this is done so for the sake of the exercise.
 
-## Task 1: Aggregation: Cars and drivers
+## Task 1: Cars and drivers
 This task is excersice in the syntax of writing entity classes, and how to connect those by assigning instances of one class to instance fields of another.
 
 1.a Create a Driver.java class with the following private fields (use appropriate types): 
@@ -53,7 +53,7 @@ This task is excersice in the syntax of writing entity classes, and how to conne
 1.m repeat the step 1.k for the new car created in 1.l. 
 
 
-## Task 2: Composition: Buildings and Rooms
+## Task 2: Buildings and Rooms
 This task i an excersice in accessing fields in objects within objects. You will create a building with some rooms. Each room will have some attributes which you will access(read the value of) in order to draw conclusions about the building in which the room is placed.
 
 2.a Create a Room.java class with the following fields (use appropriate types and make them private): 
@@ -118,5 +118,31 @@ int id
 (Du kan oprette instanserne først, og så add'e dem til array'et. Du kan også adde og instantiere i samme linie.)
 
 3.d Skriv en metode i Main kaldet printCustomers(), hvor du printer alle kunderne ud ved at gennemløbe 'customers' med et ’for each’ loop. Test metoden fra main ved at kalde den.
+
+
+## Task 4: Dokumenter koden
+Denne opgave forudsætter at du nu har kodet Task2 og Task3 og placeret koden til hver opgave i en folder under src med navne Task2 hhv. Task3
+
+4.a Lav en ny folder i projektet - på samme niveau som src folderen - som du kalder "Documentation".  
+
+4.b Opret en PlantUML fil i folderen, med navnet "CarsAndDrivers" - vælg diagramtypen 'object'.
+
+4.c Du kan vælge helt at slette den skabelon kode der står i dokumentetet, eller rette det til. Skriv plantUML kode, der afspejler den kode du skrev i Task2, og som ligger i src/Task2. 
+(Der bør være 3  klasser i folderen, Task2: Main, Car og Driver).
+For hver klasse skal diagrammet vise en kasse med klassens navn samt klassens:
+ -  felter: access modifyer, type, navn
+ -  metoder: access modifyer, returtype, navn, parameterliste
+ 
+4.d Få diagrammet til at vise relationer mellem klasserne ved at tegne linjer mellem kasserne:
+ <details>
+        <summary>
+           Hint
+        </summary>
+         Et \'has-a\' relationship vises sådan her:
+          Car \*-- Engine 
+         <i>En bil har en motor</i>
+    </details>
+
+4.e Gentag processen fra step 4.b - 4-d, dog skal filen denne gang hedde "BuildingsAndRooms" og den kode der skal dokumenteres er den du har skrev i Task3
 
 
