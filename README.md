@@ -139,8 +139,8 @@ For hver klasse skal diagrammet vise en kasse med klassens navn samt klassens:
            Hint
         </summary>
          Et 'has-a' relationship vises sådan her:
-          Car *-- Engine 
-         <i>En bil har en motor</i>
+          Car *-- Engine <br>
+         <i>(En bil har en motor)</i>
     </details>
 
 4.e Gentag processen fra step 4.b - 4-d, dog skal filen denne gang hedde "BuildingsAndRooms" og den kode der skal dokumenteres er den du har skrev i Task3
