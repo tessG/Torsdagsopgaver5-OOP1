@@ -138,8 +138,8 @@ For hver klasse skal diagrammet vise en kasse med klassens navn samt klassens:
         <summary>
            Hint
         </summary>
-         Et \'has-a\' relationship vises sådan her:
-          Car \*-- Engine 
+         Et 'has-a' relationship vises sådan her:
+          Car *-- Engine 
          <i>En bil har en motor</i>
     </details>
 
