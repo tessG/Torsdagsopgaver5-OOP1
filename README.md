@@ -8,11 +8,11 @@ In each package, create a Main.java with a static Main method which will be used
 Please note, that it is quite unusual to have a Main class in each package, yet this is done so for the sake of the exercise.
 
 ## Task 1: Cars and drivers
-This task is excersice in the syntax of writing entity classes, and how to connect those by assigning instances of one class to instance fields of another.
+This task is an exercise in the syntax of writing entity classes, and how to connect those by assigning instances of one class to instance fields of another.
 
 1.a Create a Driver.java class with the following private fields (use appropriate types): 
-- Name
-- Age
+- name
+- age
 
 1.b Create a constructor that populates all the fields above. 
 
@@ -25,28 +25,28 @@ This task is excersice in the syntax of writing entity classes, and how to conne
 
 1.d Create a constructor, that populates all the fields above, except the Driver. 
 
-1.e A car is not instantiated with a Driver, so we need another way to assign and un-assign a driver to a car: create getter and a getter methods for the Driver variable, of the Car class.
+1.e A car is not instantiated with a Driver, so we need another way to assign and un-assign a driver to a car: create getter and setter methods for the Driver variable, of the Car class.
 
-1.f override the toString method in the Car class, returning:
+1.f Override the toString() method in the Car class, returning:
      "Make: "+make+". Model: "+model+ " ("+ year + "), BodyStyle: "+bodyStyle
 
    <details>
         <summary>
            Help:
         </summary>
-         <a href="https://www.geeksforgeeks.org/overriding-tostring-method-in-java/">read about overriding the toString method</a>
+         <a href="https://www.geeksforgeeks.org/overriding-tostring-method-in-java/">Read about overriding the toString method</a>
     </details>  
      
-1.g override the toString method in the Driver class, returning: 
+1.g Override the toString() method in the Driver class, returning: 
     " is driven by "+name
 
 1.h In the main method, instantiate a new Driver, populating the fields with your own name and age. 
 
-1.i In the main method, instantiate a new car, populating the field with whatever values you see fit. 
+1.i In the main method, instantiate a new Car, populating the field with whatever values you see fit. 
 
 1.j In the main method, assign the driver to the car created, using the setter method created in step 1.e
 
-1.k print the toString method of the car you've created followed by the toString method of the driver. 
+1.k print the toString() method of the car you've created followed by the toString() method of the driver. 
 
 1.l In the main method, create yet another car and assign the same driver to this car. 
 
@@ -54,7 +54,7 @@ This task is excersice in the syntax of writing entity classes, and how to conne
 
 
 ## Task 2: Buildings and Rooms
-This task i an excersice in accessing fields in objects within objects. You will create a building with some rooms. Each room will have some attributes which you will access(read the value of) in order to draw conclusions about the building in which the room is placed.
+This task is an exercise in accessing fields in objects within objects. You will create a building with some rooms. Each room will have some attributes which you will access (read the value of) in order to draw conclusions about the building in which the room is placed.
 
 2.a Create a Room.java class with the following fields (use appropriate types and make them private): 
 - numberOfDoors
@@ -66,7 +66,7 @@ This task i an excersice in accessing fields in objects within objects. You will
 2.c As the fields of the Room class are private, create getters() for each of them, 
 
 2.d Create a Building.java class with the following fields (use appropriate types):
-- Rooms (make sure to use the \'final\' keyword here as this variable should never change once it has been assigned a value)
+- rooms (make sure to use the \'final\' keyword here as this variable should never change once it has been assigned a value)
    <details>
         <summary>
           Hint  
@@ -93,7 +93,7 @@ This task i an excersice in accessing fields in objects within objects. You will
 
 2.i In your main method, instantiate a new building.
 
-2.j create a static method in Main, countLampsInBuilding, that takes an object of type Building, and returns the total number of lamps in the entire building.
+2.j create a static method in Main, countLampsInBuilding(), that takes an object of type Building, and returns the total number of lamps in the entire building.
  <details>
         <summary>
            Hint
@@ -101,7 +101,7 @@ This task i an excersice in accessing fields in objects within objects. You will
          You will need to have a loop in the body of the method that looks at each room in the building to add the number of laps in each room.
     </details>
 
-2.k create another static method in Main, isNormal, that takes an object of type Building. The method should return true if the Building's numberOfFloors is greater than its number of Rooms. If not it should print "This is an odd building" and return false.
+2.k Create another static method in Main, isNormal(), that takes an object of type Building. The method should return true if the Building's numberOfFloors is greater than its number of Rooms. If not it should print "This is an odd building" and return false.
 
 
 ## Task 3: (language switch alert) ArrayList og Objekter
